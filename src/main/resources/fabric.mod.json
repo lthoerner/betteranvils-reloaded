@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "betteranvils-reloaded",
+	"version": "${version}",
+	"name": "BetterAnvils Reloaded",
+	"description": "A mod that improves anvils in a variety of ways which can all be configured to your liking.",
+	"authors": [
+		"lthoerner"
+	],
+	"contact": {
+		"homepage": "https://code.lthoerner.com/betteranvils-reloaded",
+		"sources": "https://modrinth.com/mod/betteranvils-reloaded"
+	},
+	"license": "GPLv3",
+	"icon": "assets/betteranvils-reloaded/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.lthoerner.betteranvilsreloaded.BetterAnvilsReloaded"
+		],
+		"fabric-datagen": [
+			"com.lthoerner.betteranvilsreloaded.BetterAnvilsReloadedDataGenerator"
+		]
+	},
+	"mixins": [
+		"betteranvils-reloaded.mixins.json",
+		{
+			"config": "betteranvils-reloaded.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
