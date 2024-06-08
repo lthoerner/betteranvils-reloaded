@@ -3,7 +3,7 @@ package com.lthoerner.betteranvilsreloaded;
 import io.wispforest.owo.config.annotation.Config;
 import io.wispforest.owo.config.annotation.Modmenu;
 
-@Modmenu(modId = "betteranvils-reloaded")
+//@Modmenu(modId = "betteranvils-reloaded")
 @Config(name = "betteranvils-config", wrapperName = "Config")
 public class ConfigModel {
     public boolean enableLevelOverrides = true;
