@@ -3,6 +3,7 @@
   "package": "com.lthoerner.betteranvilsreloaded.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "AnvilLogicMixin",
     "EnchantmentAccessor",
     "PropertiesAccessor",
     "RegistryMixin"

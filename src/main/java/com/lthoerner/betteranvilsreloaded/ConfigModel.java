@@ -6,7 +6,8 @@ import io.wispforest.owo.config.annotation.Modmenu;
 //@Modmenu(modId = "betteranvils-reloaded")
 @Config(name = "betteranvils-config", wrapperName = "Config")
 public class ConfigModel {
-    public boolean enableLevelOverrides = true;
+    public boolean disableDamageFromRepairs = true;
+    public boolean enableLevelOverrides = false;
     public int protectionMaxLevel = 4;
     public int fireProtectionMaxLevel = 4;
     public int featherFallingMaxLevel = 4;
